@@ -20,7 +20,7 @@
         
         <% @episodes.reverse.each do |episode| %>
           <div class="post-preview">
-            <a href="episodes/<%= episode.id %>">
+            <a href="<%= edit_episode_path(@episode) %>">
               <h2 class="post-title">
                 <%= episode.title %>
               </h2>
