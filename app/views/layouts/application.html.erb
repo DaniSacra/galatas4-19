@@ -23,7 +23,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="<%= episodes_path%>">Início</a>
+        <%= link_to "Início", episodes_path, class:"navbar-brand" %>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -31,18 +31,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<%= episodes_path%>">Home</a>
+              <%= link_to "Home", episodes_path, class:"nav-link" %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<%= new_episode_path%>">Criar</a>
+              <%= link_to "Criar", new_episode_path, class:"nav-link" %>
             </li>
-            <!--
             <li class="nav-item">
-              <a class="nav-link" href="post.html">Sample Post</a>
-            </li>
-            -->
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <%= link_to "Contato", episodes_path, class:"nav-link" %>
             </li>
           </ul>
         </div>

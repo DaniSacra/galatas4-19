@@ -1,5 +1,5 @@
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url(<%= asset_path 'contact-bg.jpg' %>)">
+  <header class="masthead" style="background-image: url(<%= asset_path 'post-bg.jpg' %>)">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -16,10 +16,7 @@
   	<div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          	<%= render 'form', episode: @episode %>
-
-			<%= link_to 'Mostrar', @episode %> |
-			<%= link_to 'Home', episodes_path %>
+          <%= render 'form', episode: @episode %>
         </div>
       </div>
     </div>

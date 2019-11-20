@@ -10,7 +10,7 @@ end
 gem 'coffee-script-source', '1.8.0'
 #gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'kaminari-bootstrap', '~> 3.0', '>= 3.0.1'
-
+gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'

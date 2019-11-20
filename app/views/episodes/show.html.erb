@@ -17,6 +17,11 @@
   </header>
 
 
+  <!-- Audio Player -->
+  <audio src="audo-teste.mp3" controls preload="none">
+  <p>Seu nevegador não suporta o elemento audio.</p>
+  </audio>
+
   <!-- Post Content -->
   <article>
     <div class="container">
@@ -33,5 +38,5 @@
   <hr>
 
   <div>
-    <%= link_to 'Editar', edit_episode_path(@episode) %>
+    <%= link_to 'Editar', edit_episode_path(@episode), class:"btn btn-light" %>
   </div>
