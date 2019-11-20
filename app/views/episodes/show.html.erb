@@ -6,7 +6,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
             <h1><%= @episode.title %></h1>
-            <h2 class="subheading">Roderick Wilson</h2>
+            <h2 class="subheading"><%= @episode.subtitle %></h2>
             <span class="meta">Postado em 
               <%= @episode.launch %>
               </span>
@@ -16,11 +16,18 @@
     </div>
   </header>
 
+  <!-- Dropbox iframe -->
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <%= link_to 'Ouvir no Dropbox', @episode.link.to_s , class:"btn btn-light" , target:"_blank" %>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Audio Player -->
-  <audio src="audo-teste.mp3" controls preload="none">
-  <p>Seu nevegador não suporta o elemento audio.</p>
-  </audio>
+  <hr>
 
   <!-- Post Content -->
   <article>
@@ -36,7 +43,19 @@
   </article>
 
   <hr>
-
+  <!-- Audio Player -->
   <div>
-    <%= link_to 'Editar', edit_episode_path(@episode), class:"btn btn-light" %>
+    <audio src="audo-teste.mp3" controls preload="none">
+    <p>Seu nevegador não suporta o elemento audio.</p>
+    </audio>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <%= link_to 'Editar', edit_episode_path(@episode), class:"btn btn-light" %>
+      </div>
+    </div>
   </div>
