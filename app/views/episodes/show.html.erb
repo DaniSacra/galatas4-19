@@ -17,17 +17,19 @@
   </header>
 
   <!-- Dropbox iframe -->
-  <div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <%= link_to 'Ouvir no Dropbox', @episode.link.to_s , class:"btn btn-light" , target:"_blank" %>
+  <% if @episode.link.to_s.strip != "" then %>
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <h3>Ouvir Mensagem</h3>
+            <%= link_to 'Ouvir no Dropbox', @episode.link.to_s , class:"btn btn-light" , target:"_blank" %>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <hr>
+    <hr>
+  <% end %>
 
   <!-- Post Content -->
   <article>
@@ -41,15 +43,6 @@
       </div>
     </div>
   </article>
-
-  <hr>
-  <!-- Audio Player -->
-  <div>
-    <audio src="audo-teste.mp3" controls preload="none">
-    <p>Seu nevegador não suporta o elemento audio.</p>
-    </audio>
-  </div>
-
   <hr>
 
   <div class="container">

@@ -1,4 +1,6 @@
 class EpisodesController < ApplicationController
+  http_basic_authenticate_with name: "jesus", password: "cristo", except: [:index, :show]
+
   before_action :set_episode, only: [:show, :edit, :update, :destroy]
 
   # GET /episodes
