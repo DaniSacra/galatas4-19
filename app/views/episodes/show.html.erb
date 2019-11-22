@@ -7,8 +7,8 @@
           <div class="post-heading">
             <h1><%= @episode.title %></h1>
             <h2 class="subheading"><%= @episode.subtitle %></h2>
-            <span class="meta">Postado em 
-              <%= @episode.launch %>
+            <span class="meta">
+              <%= @episode.launch.strftime("%d/%m/%Y") %>
               </span>
           </div>
         </div>
