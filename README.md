@@ -1,13 +1,19 @@
-# Passo a passo
+## Versões
+Ruby 2.3.3
+Rails 5.1.7
+Sqlite3 3.8.7.2
 
-* Instalar Rails 5+
+# Instalação
+* Instalar Rails
 * Instalar Sqlite3
-* Rodar app nome_do_app
-* Copiar todo o repositório do github no seu computador
-* Rodar bundle install
-* instalar o node.js
-* Instalar o yarn
-* Rodar yarn add jquery
-* Rodar yarn add bootstrap
-* Rodar yarn add fontawesome
-* Subir app
+* Instalar Node.js
+* Instalar Yarn
+
+Rodar
+````
+rails new app_name
+bundle install
+yarn add jquery
+yarn add bootstrap
+yarn add fontawesome
+````
