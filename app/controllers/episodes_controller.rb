@@ -1,5 +1,8 @@
 class EpisodesController < ApplicationController
-  http_basic_authenticate_with name: "jesus", password: "cristo", except: [:index, :show]
+  # http_basic_authenticate_with name: "jesus", password: "cristo", except: [:index, :show]
+
+  # Only authorized users can edit, udpdate and destroy
+  before_action :authenticate_user!, :except => [:show, :index]
 
   before_action :set_episode, only: [:show, :edit, :update, :destroy]
 

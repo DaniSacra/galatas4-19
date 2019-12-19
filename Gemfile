@@ -10,6 +10,8 @@ ruby '2.6.5'
 # dani
 gem 'coffee-script-source', '1.8.0'
 gem 'pg', '~> 0.18'
+gem 'devise'
+gem 'cancancan'
 
 #gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'kaminari-bootstrap', '~> 3.0', '>= 3.0.1'

@@ -45,10 +45,12 @@
   </article>
   <hr>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <%= link_to 'Editar', edit_episode_path(@episode), class:"btn btn-light" %>
+  <% if can? :edit, @episode %>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <%= link_to 'Editar', edit_episode_path(@episode), class:"btn btn-light" %>
+        </div>
       </div>
     </div>
-  </div>
+  <% end %>
