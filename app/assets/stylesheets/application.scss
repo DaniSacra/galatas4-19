@@ -20,4 +20,7 @@
  *= require_self
  */
 @import "bootstrap-sprockets";
-@import "bootstrap";
+@import "font-awesome/css/font-awesome.min";
+@import "bootstrap/dist/css/bootstrap.min";
+@import "@fortawesome/fontawesome-free/css/all.min";
+@import "clean-blog.min";
